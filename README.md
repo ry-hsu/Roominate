@@ -1,3 +1,13 @@
+# CS 665 Final Project - Roominate
+
+# 2.1 Design Pattern and its Use Case Scenario
+The main design pattern of study in this system is the Builder Pattern. This pattern is used to encapsulate the construction of a product (rooms in a house) and allow it to be constructed in steps. This is allows for the complex construction of a room to be created with a flexible data structure. The RoomBuilder.java interface provides the necessary steps to build a room. In the case of Roominate, that includes placing furniture, choosing a paint color and in a future release adding any appliances. The two concrete builders, DiningRoomBuilder.java and BedroomBuilder.java each can construct a room with the necessary items. The KitchenRoomBuilder.java creates a kitchen room that adds the step of appliances. The Builder Pattern is used here to reach one of the design goals of building a system that is reusable. There are many different types of rooms that could be built and each could be different, such as a bathroom that needs to also include plumbing, or a garage that needs to include a garage door, this pattern allows for future implementations of these rooms easily. 
+
+One other design goal for this project was design with a visual product in view. Because the nature of the problem of scaling in interior design is best solved with a visual solution, the Roominate system also provides a display for the user with which they can view their design of the room.
+
+The simplicity of this code is mainly becuase of the builder pattern because the creation of a room would be quite complex if it was done by instantiating a room and then adding all the steps so it is easier to do this where the builder allows ther user to create a certain Room type and allow the system to take care of the steps while allowing a user to go back in and change all the values to be more customized. 
+
+
 # Project Template
 
 This is a Java Maven Project Template

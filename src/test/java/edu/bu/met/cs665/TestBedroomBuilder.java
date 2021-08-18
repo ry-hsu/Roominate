@@ -15,7 +15,7 @@ public class TestBedroomBuilder {
     @Test
     public void TestBedroomBuilderDefaultFurniture() {
         BedroomBuilder bb = new BedroomBuilder();
-        bb.defFurniture();
+        //bb.defFurniture();
         Room rm = bb.getRoom();
 
         List<Furniture> ft = rm.getFurniture();
@@ -32,7 +32,7 @@ public class TestBedroomBuilder {
     @Test
     public void TestBedroomPaint() {
         BedroomBuilder bb = new BedroomBuilder();
-        bb.defFurniture();
+        //bb.defFurniture();
         bb.addPaint(Color.GREEN);
         Room rm = bb.getRoom();
         assertEquals(Color.GREEN, rm.getPaint());
@@ -41,7 +41,7 @@ public class TestBedroomBuilder {
     @Test
     public void TestBedroomAddFurniture() {
         BedroomBuilder bb = new BedroomBuilder();
-        
+        bb.clearFurnList();
         bb.addFurniture(new Bed(2,3,20,40,"L"));
         
         Room rm = bb.getRoom();

@@ -66,4 +66,11 @@ public class Room {
     public Color getPaint() {
         return paint;
     }
+
+    /**
+     * Clears the furniture list to start over
+     */
+    public void clearList() {
+        furnList.clear();
+    }
 }

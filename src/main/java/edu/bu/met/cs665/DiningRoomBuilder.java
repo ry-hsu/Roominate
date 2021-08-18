@@ -19,6 +19,12 @@ public class DiningRoomBuilder implements RoomBuilder {
      */
     public DiningRoomBuilder() {
         diningRoom = new Room();
+
+        //default furniture step
+        this.defFurniture();
+
+        //default paint step
+        this.addPaint(Color.WHITE);
     }
 
     /**
@@ -56,4 +62,11 @@ public class DiningRoomBuilder implements RoomBuilder {
         diningRoom.addFurniture(new Chair(37,35));
         diningRoom.addFurniture(new Dresser(2,2,30,5,"L"));
     }    
+
+    /**
+     * Clear furniture list
+     */
+    public void clearFurnList() {
+        diningRoom.clearList();
+    }
 }

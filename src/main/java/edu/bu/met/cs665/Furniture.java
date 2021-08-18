@@ -56,6 +56,14 @@ public abstract class Furniture extends Drawable {
     }
 
     /**
+     * Returns the color of the furniture.
+     * @return Color current color
+     */
+    public void setColor(Color c) {
+        color = c;
+    }
+
+    /**
      * Text to add to the GUI paint of the furniture.
      * The text is added to the upper-left hand of the 
      * furniture.

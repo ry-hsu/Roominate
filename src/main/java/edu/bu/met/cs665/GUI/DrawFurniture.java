@@ -16,28 +16,28 @@ import edu.bu.met.cs665.*;
 
 public class DrawFurniture extends JPanel {
 
-    public static List<Furniture> furnList; //list of Furnitures to draw
+    private List<Furniture> furnList; //list of Furnitures to draw
 
     /**
      * DrawFurniture constructor
      * @param furns List of type Furniture to paint
      */
     public DrawFurniture(List<Furniture> furns) {
-        furnList = furns;
+        this.furnList = furns;
     }
 
     /**
      * Paint all Furniture objects in furnList
      * @param g Graphics for paint
      */
-    public static void paintAllFurniture(Graphics g) {
+    public void paintAllFurniture(Graphics g) {
 
         //Draw Room boundary
         g.setColor(Color.BLACK);
         g.drawRect(10,10,500,500);
 
         // For each furniture get the shape and prtin
-        for(Furniture f : furnList) {
+        for(Furniture f : this.furnList) {
             if (f.getShape().equals(Options.Shape.RECTANGLE)) {
                 System.out.println("Drawing " + f.toString());
 

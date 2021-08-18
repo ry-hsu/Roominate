@@ -19,6 +19,12 @@ public class BedroomBuilder implements RoomBuilder {
      */
     public BedroomBuilder() {
         bedroom = new Room();
+
+        //default furniture step
+        this.defFurniture();
+
+        //default paint step
+        this.addPaint(Color.WHITE);
     }
 
     /**
@@ -53,6 +59,13 @@ public class BedroomBuilder implements RoomBuilder {
         tb.setShape(Options.Shape.RECTANGLE);
         bedroom.addFurniture(tb);
         bedroom.addFurniture(new Chair(12,35));
+    }
+
+    /**
+     * Clear furniture list
+     */
+    public void clearFurnList() {
+        bedroom.clearList();
     }
 }
 

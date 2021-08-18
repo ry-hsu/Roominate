@@ -12,7 +12,7 @@ public class TestDiningBuilder {
     @Test
     public void TestDiningRoomBuilderSetup() {
         DiningRoomBuilder db = new DiningRoomBuilder();
-        db.defFurniture();
+        //db.defFurniture();
         Room rm = db.getRoom();
 
 

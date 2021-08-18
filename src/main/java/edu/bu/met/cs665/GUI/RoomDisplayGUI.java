@@ -12,12 +12,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RoomDisplayGUI {
-    public static ArrayList<Room> house;
-    public static HashMap<String,Room> houseRooms;
-    public static JPanel centerPanel;
-    public static JFrame f;
-    public static Boolean buildBed;
-    public static Boolean buildDining;
+    private static ArrayList<Room> house;
+    private static HashMap<String,Room> houseRooms;
+    private static JPanel centerPanel;
+    private static JFrame f;
 
     public static JPanel buildMenuPanel() {
         Border blackline = BorderFactory.createLineBorder(Color.BLACK);
