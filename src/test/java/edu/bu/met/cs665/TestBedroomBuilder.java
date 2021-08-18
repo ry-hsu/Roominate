@@ -8,6 +8,10 @@ import java.awt.*;
 import edu.bu.met.cs665.Furnitures.*;
 
 public class TestBedroomBuilder {
+    /**
+     * Test Case 1.
+     * Test bedroom with default furniture is built
+     */
     @Test
     public void TestBedroomBuilderDefaultFurniture() {
         BedroomBuilder bb = new BedroomBuilder();
@@ -21,6 +25,10 @@ public class TestBedroomBuilder {
         assertEquals(4,rm.getFurniture().size());
     }
 
+    /**
+     * Test Case 2.
+     * Test room paint is added
+     */
     @Test
     public void TestBedroomPaint() {
         BedroomBuilder bb = new BedroomBuilder();
