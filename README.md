@@ -7,6 +7,16 @@ One other design goal for this project was design with a visual product in view.
 
 The simplicity of this code is mainly becuase of the builder pattern because the creation of a room would be quite complex if it was done by instantiating a room and then adding all the steps so it is easier to do this where the builder allows ther user to create a certain Room type and allow the system to take care of the steps while allowing a user to go back in and change all the values to be more customized. 
 
+# 2.2 UML Class Diagram
+
+![UML](CS665_FinalProject_UML.pdf)
+
+# 2.3 Implementation
+Roominate can be run as is with the default settings and steps implemented. To do this, you need to be able to launch a Java window from this program. Then, run the main method from RoomDisplayGUI.java 
+
+On entry, close the pop message. Then you can click Dining or Bed to view that room.
+
+To modify the rooms, the easiest way is to modify the default settings at the moment. This settings can be setup in the defFunction() functions of BedroomBuilder.java and DiningRoomBuilder.java
 
 # Project Template
 
